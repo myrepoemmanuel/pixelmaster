@@ -1,5 +1,6 @@
 
 /*--------------- basic styling --------------- */
+
 html, body {
       margin: 0;
       padding: 0;
@@ -9,45 +10,154 @@ html, body {
       background: #0f0f0f !important;
       color: #fff !important;
 }
-
-.row{
-      margin-right: 15px !important;
+html{
+      /* scroll-snap-type: y proximity; */
 }
+
+.container .container-fluid{
+      padding: 15px !important;
+}
+
+.proj_section{
+      transition: background 1s;
+      box-shadow: black 0px 86px 50px -65px;
+      /* scroll-snap-align: end; */
+}
+
+.proj_section .row{
+      margin: auto;
+      width: 95vw;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      justify-items: center;
+      align-items: center;
+      /* scroll-snap-align: start; */
+}
+
+.col-lg-4 {
+      max-width: 100% !important;
+}
+
+.col-lg-6 {
+      max-width: 100% !important;
+}
+
+.col-lg-5 {
+      max-width: 100% !important;
+}
+
+.col-lg-8 {
+      max-width: 100% !important;
+}
+
+.col-lg-7 {
+      max-width: 100% !important;
+}
+.proj_desc{
+      display: grid;
+      align-content: center;
+      justify-items: center;
+      margin-bottom: 0;
+      line-height: normal;
+      position: relative;
+      
+}
+
+.proj_desc h4{
+      width: 100%;
+      background: rgba(0, 0, 0, 0.573);
+      padding: 15px;
+      border-radius: 5px;  
+}
+
+@media (max-width: 1000px) {
+
+      .project{
+            height: 550px !important;
+      }
+
+      .proj_section .row{
+            grid-template-columns: 1fr;
+            grid-template-rows: auto;
+      }
+
+      .proj_section .project{
+            grid-column: 1;
+            grid-row: 1;
+      }
+
+      .proj_desc {
+            position: absolute !important;
+            width: 80% !important;
+            z-index: 1;
+      }
+
+      .proj_desc h4{
+            line-height: 40px;
+      }
+   
+}
+
+@media (max-width: 500px) {
+      .proj_desc h4 {
+            font-size: 1rem;
+      }
+
+      .hero {
+            height: 70vh !important;
+      }
+}
+
+@media (max-width: 400px) {
+      .proj_desc h4 {
+            font-size: 0.8rem;
+            line-height: 34px;
+      }
+      .project {
+            height: 380px !important;
+      }
+}
+
+@media (max-width: 992px) {
+      .proj_desc h4 {
+            font-size: 0.8rem;
+            line-height: 30px;
+      }
+}
+
 /* .................................... */
 
 
 .hero-logo {
-  position: fixed;
-  margin: 2em;
-  color: white;
-  font-family: "Cosi Azure";
-  font-style: 16px;
-  mix-blend-mode: difference;
-  z-index: 2;
+      position: fixed;
+      margin: 2em;
+      color: white;
+      font-family: "Cosi Azure";
+      font-style: 16px;
+      mix-blend-mode: difference;
+      z-index: 2;
 }
 
 .menu-toggle {
-  position: fixed;
-  right: 0;
-  margin: 2em;
-  color: white;
-  z-index: 100;
-  
-  
+      position: fixed;
+      right: 0;
+      margin: 2em;
+      color: white;
+      z-index: 100;
 }
 
 .menu-toggle ion-icon {
-  font-style: 16px;
-  border: 2px white solid;
+      font-style: 16px;
+      border: 2px white solid;
 }
 
 .overlay {
-  position: fixed;
-  width: 100%;
-  height: 100vh;
-  background: #0f0f0f;
-  z-index: 1;
-  opacity: 0;
+      position: fixed;
+      width: 100%;
+      height: 100vh;
+      background: #0f0f0f;
+      z-index: 1;
+      opacity: 0;
 }
 
 .overlay ion-icon {
@@ -58,34 +168,34 @@ html, body {
 }
 
 .overlay ul {
-  position: absolute;
-  top: 50%;
-  left: 30%;
-  transform: translate(-50%, -50%);
-  list-style: none;
+      position: absolute;
+      top: 50%;
+      left: 30%;
+      transform: translate(-50%, -50%);
+      list-style: none;
 }
 
 .overlay ul li {
-  font-size: 84px;
+      font-size: 84px;
 }
 
 @media (max-width: 900px) {
-  .overlay ul li {
-    font-size: 30px;
-    padding: 10px 0;
-  }
+      .overlay ul li {
+      font-size: 30px;
+      padding: 10px 0;
+      }
 }
 
 .overlay ul li a {
-  color: transparent;
-  -webkit-text-stroke: 1px white;
-  font-family: "Times New Roman";
-  text-transform: uppercase !important;
+      color: transparent;
+      -webkit-text-stroke: 1px white;
+      font-family: "Times New Roman";
+      text-transform: uppercase !important;
 }
 
 .overlay ul li a:hover {
-  text-decoration: none;
-  color: white;
+      text-decoration: none;
+      color: white;
 }
 
 /* .................................... */
@@ -113,6 +223,49 @@ html, body {
       transform: translateY(-50%);
 }
 
+@media(max-width: 1411px) {
+      .line {
+            font-size: 60px !important;
+      }
+}
+
+@media(max-width: 1200px) {
+      .line {
+            font-size: 50px !important;
+      }
+}
+
+@media(max-width: 1005px) {
+      .line {
+            font-size: 40px !important;
+      }
+      .clipped_bg span{
+            font-size: 180px !important;
+      }
+}
+
+@media(max-width: 830px) {
+      .line {
+            font-size: 30px !important;
+      }
+      
+}
+
+@media(max-width: 600px) {
+      .line {
+            font-size: 23px !important;
+      }
+      .clipped_bg span{
+            font-size: 130px !important;
+      }
+}
+
+@media (max-width: 430px) {
+      .line {
+        font-size: 19px !important;
+      }
+    }
+
 .anim-typewriter {
       animation: typewriter 4s steps(40) 1s 1 normal both,
       blinkTextCussor 500ms steps(40) infinite normal;
@@ -123,7 +276,40 @@ html, body {
             width: 0;
       }
       to {
-            width: 18em;
+            width: 19em;
+      }
+}
+
+@media(max-width: 830px) {
+      @keyframes typewriter {
+            from {
+                  width: 0;
+            }
+            to {
+                  width: 18.3em;
+            }
+      }
+}
+
+@media(max-width: 1000px) {
+      @keyframes typewriter {
+            from {
+                  width: 0;
+            }
+            to {
+                  width: 18.1em;
+            }
+      }
+}
+
+@media(max-width: 600px) {
+      @keyframes typewriter {
+            from {
+                  width: 0;
+            }
+            to {
+                  width: 17.4em;
+            }
       }
 }
 
@@ -134,7 +320,7 @@ html, body {
                   width: 0;
             }
             to {
-                  width: 17em;
+                  width: 17.5em;
             }
       }
 }
@@ -151,7 +337,7 @@ html, body {
 /*--------------- navigation --------------- */
 nav {
       width: 100%;
-      background: #0f0f0f;
+      background: #0f0f0f97;
       height: 80px;
       position: fixed;
       z-index: 1;
@@ -162,6 +348,7 @@ nav #brand {
       display: block;
       margin-left: 82px;
       line-height: 80px;
+      width: max-content;
       font-weight: bold;
 }
 
@@ -317,23 +504,60 @@ nav #menu li a:hover {
       justify-content: center;
 }
 
+.hero img{
+      position: absolute;
+      width: 100%;
+      height: calc(100vh + 80px);
+      object-fit: cover;
+      opacity: 0.1;
+      top: -80px;
+}
+
+
+
+.clipped_bg {
+      display: grid;
+      width: max-content;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      
+}
+.clipped_bg span{
+      font-size: 250px;
+      opacity: .4;
+      /* line-height: 80px; */
+      text-align: center;
+      font-weight: 800;
+      text-transform: uppercase;
+      background: url(img/paint.jpg) 0 0 / cover no-repeat;
+      color: #de466c;
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+}
+   
+   
+
 .hero h1 {
       font-weight: lighter;
       text-align: center;
       letter-spacing: -2px;
-      line-height: 58px;
+      /* line-height: 58px; */
+      font-size: 70px;
 }
 
 @media(max-width: 768px) {
       .header h1 {
-            font-size: 26px;
+            font-size: 35px;
       }
 }
 
 
 @media (max-width: 450px){
       .header h1 {
-            font-size: 24px;
+            font-size: 28px;
       }
 }
 
@@ -426,6 +650,7 @@ h6 {
       left: 90%;
       right: 0;
       bottom: 0;
+      width: max-content;
 }
 
 .project3 {
@@ -446,6 +671,7 @@ h6 {
       left: -50%;
       right: 0;
       bottom: 0;
+      width: max-content;
 }
 
 .project4 {
@@ -466,9 +692,19 @@ h6 {
       left: 90%;
       right: 0;
       bottom: 0;
+      width: max-content;
 }
 
-@media(max-width: 768px) {
+@media(max-width: 995px) {
+      
+      .project1::after, .project2::after, .project3::after, .project4::after {
+            top: 3%;
+            left: 1%;
+            width: max-content;
+      }
+}
+
+@media(max-width: 750px) {
       .project {
             width: 90% !important;
             margin: 14px auto;
@@ -484,6 +720,11 @@ h6 {
 }
 
 /*--------------- footer section --------------- */
+.footer_email{
+      font-size: 20px; 
+      text-decoration: none; 
+      color: white;
+}
 .collab {
       text-align: right;
 }
@@ -702,3 +943,41 @@ textarea:focus {
 .next p {
       text-align: right;
 }
+
+
+/* animista............ */
+
+.text-shadow-pop-bottom {
+	-webkit-animation: text-shadow-pop-bottom 0.6s both;
+	animation: text-shadow-pop-bottom 0.6s both;
+      letter-spacing: 4px;
+}
+--------------------------------------
+
+@-webkit-keyframes text-shadow-pop-bottom {
+      0% {
+      text-shadow: 0 0 #555555, 0 0 #555555, 0 0 #555555, 0 0 #555555, 0 0 #555555, 0 0 #555555, 0 0 #555555, 0 0 #555555;
+      -webkit-transform: translateY(0);
+      transform: translateY(0);
+      }
+      100% {
+            text-shadow: 0 1px #555555, 0 2px #555555, 0 3px #555555, 0 4px #555555, 0 5px #555555, 0 6px #555555, 0 7px #555555, 0 8px #555555;
+            -webkit-transform: translateY(-8px);
+            transform: translateY(-8px);
+      }
+}
+@keyframes text-shadow-pop-bottom {
+      0% {
+      text-shadow: 0 0 #555555, 0 0 #555555, 0 0 #555555, 0 0 #555555, 0 0 #555555, 0 0 #555555, 0 0 #555555, 0 0 #555555;
+      -webkit-transform: translateY(0);
+            transform: translateY(0);
+      }
+      100% {
+      text-shadow: 0 1px #555555, 0 2px #555555, 0 3px #555555, 0 4px #555555, 0 5px #555555, 0 6px #555555, 0 7px #555555, 0 8px #555555;
+      -webkit-transform: translateY(-8px);
+            transform: translateY(-8px);
+      }
+}
+
+
+

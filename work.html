@@ -5,8 +5,9 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta http-equiv="X-UA-Compatible" content="ie=edge">
       <meta name="author" content="harrnish">
+      <link rel="icon" type="image/x-icon" href="/img/favicon.ico">
 
-      <title>Work | Portfolio Website Template | CODEGRID</title>
+      <title>Work | PM</title>
 
       <!-- stylesheet -->
       <link rel="stylesheet" href="style.css">
@@ -81,43 +82,67 @@
             <!--------------- hero section ends here --------------->
 
             <!--------------- projects section starts here --------------->
-            <div class="container-fluid">
+            <div class="container-fluid proj_section">
+                  <br><br><br>
+
+                  <h6>Selected projects</h6>
+
+                  <div class="vertical"></div>
+                  <br>
 
                   <div class="whitespace"></div>
                   <div class="whitespace"></div>
 
-                  <div class="row">
-                        <div class="col-lg-8"></div>
+                  <div data-img="blue_eco" class="row">
+                        <div class="col-lg-8 proj_desc">
+                              <h4>
+                                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequatur ratione nostrum omnis deleniti qui dignissimos est 
+                                    perspiciatis harum amet placeat ullam non ducimus reprehenderit id, cumque autem repudiandae expedita beatae.
+                              </h4>
+                        </div>
 
-                        <div class="col-lg-4 project project1 wow fadeInUp" data-wow-delay="1.4s" ></div>
+                        <div class="col-lg-4 project project1 wow fadeInUp"></div>
                   </div>
 
                   <div class="whitespace"></div>
 
-                  <div class="row">
-                        <div class="col-lg-6 project project2 wow fadeInUp" ></div>
+                  <div data-img="luxe" class="row">
+                        <div class="col-lg-6 project project2 wow fadeInUp"></div>
 
-                        <div class="col-lg-6"></div>
+                        <div class="col-lg-6 proj_desc">
+                              <h4>
+                                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequatur ratione nostrum omnis deleniti qui dignissimos est 
+                                    perspiciatis harum amet placeat ullam non ducimus reprehenderit id, cumque autem repudiandae expedita beatae.
+                              </h4>
+                        </div>
                   </div>
 
                   <div class="whitespace"></div>
 
-                  <div class="row">
-                        <div class="col-lg-7"></div>
+                  <div data-img="ocean" class="row">
+                        <div class="col-lg-7 proj_desc">
+                              <h4>
+                                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequatur ratione nostrum omnis deleniti qui dignissimos est 
+                                    perspiciatis harum amet placeat ullam non ducimus reprehenderit id, cumque autem repudiandae expedita beatae.
+                              </h4>
+                        </div>
 
-                        <div class="col-lg-4 project project3 wow fadeInUp" ></div>
+                        <div class="col-lg-4 project project3 wow fadeInUp"></div>
 
-                        <div class="col-lg-1"></div>
                   </div>
 
                   <div class="whitespace"></div>
 
-                  <div class="row">
-                        <div class="col-lg-1"></div>
+                  <div data-img="pixwave" class="row">
 
-                        <div class="col-lg-5 project project4 wow fadeInUp" ></div>
+                        <div class="col-lg-5 project project4 wow fadeInUp"></div>
 
-                        <div class="col-lg-6"></div>
+                        <div class="col-lg-6 proj_desc">
+                              <h4>
+                                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequatur ratione nostrum omnis deleniti qui dignissimos est 
+                                    perspiciatis harum amet placeat ullam non ducimus reprehenderit id, cumque autem repudiandae expedita beatae.
+                              </h4>
+                        </div>
                   </div>
 
                   <div class="whitespace"></div>
@@ -169,7 +194,7 @@
 
                                     <div class="col-lg-4" id="address">
                                           <p class="wow fadeInUp" data-wow-delay="0s">say hello</p>
-                                          <h4 class="wow fadeInUp" data-wow-delay="0.2s">pixelmasterpng@gmail.com</h4>
+                                          <a href="mailto:pixelmasterpng@gmail.com" class="wow fadeInUp footer_email" data-wow-delay="0.2s">pixelmasterpng@gmail.com</a>
                                           <br><br>
                                     </div>
                               </div>
@@ -227,6 +252,51 @@
       new WOW().init();
 
 
+      </script>
+
+      <script>
+            let img_arr = {
+                  "blue_eco": "img/Blue_ECO.jpg",
+                  "luxe": "img/TSHIRT2.jpg",
+                  "ocean": "img/OCEAN_ORION.jpg",
+                  "pixwave": "img/C2.jpg",
+            }
+
+            let img_text_arr = {
+                  "blue_eco": "Blue Eco Solutions logo is a harmonious blend of azure hues forming a flowing water droplet, encircled by lush green leaves, symbolizing environmental commitment and sustainable water solutions.",
+                  "luxe": "Luxe-Vogue Suits logo is a refined, minimalist emblem featuring a classic hat and bow tie, evoking timeless sophistication. It symbolizes the brand's commitment to high-quality, luxurious suits and impeccable style.",
+                  "ocean": "Ocean Orion Shipping Company's logo features a sleek, modern design with a rotated 'C' seamlessly joined to form a dynamic wave, embodying the company's commitment to maritime excellence and innovation.",
+                  "pixwave": "Pixwave Productions' logo features a sleek, abstract fusion of pixel and wave elements, symbolizing their innovative approach to multimedia content creation. Vibrant colors exude creativity, making it visually captivating and memorable.",
+            }
+            
+            // used to change proj text 
+            let all_proj_rows = document.getElementsByClassName("proj_desc");
+            for (let i = 0; i < all_proj_rows.length; i++) {
+                  let recepient_elem = all_proj_rows[i].children[0];
+                  // get dict key 
+                  let img_att = all_proj_rows[i].parentElement.getAttribute("data-img");
+                  let img_text = img_text_arr[img_att];
+                  recepient_elem.innerHTML = img_text;
+                  
+            }
+
+            // used to repace proj section bg 
+            for (let i = 0; i < all_proj_rows.length; i++) {
+                  let recepient_parent = document.getElementsByClassName("proj_section")[0];
+                  all_proj_rows[i].addEventListener("mouseover", function(){
+                        let img_att = all_proj_rows[i].getAttribute("data-img");
+                        let bg_img = img_arr[img_att];
+                        recepient_parent.style.transition = "background 1s";
+                        recepient_parent.style.background = `#000 url(${bg_img}) no-repeat 0% 0%`; 
+                        
+                  })
+
+                  all_proj_rows[i].addEventListener("mouseout", function(){
+                        recepient_parent.style.background = '#000'; 
+                        recepient_parent.style.transition = "background 1s";
+                  })
+                  
+            }
       </script>
 </body>
 </html>
