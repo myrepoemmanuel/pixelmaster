@@ -5,9 +5,10 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta http-equiv="X-UA-Compatible" content="ie=edge">
       <meta name="author" content="pixelmasterpng@gmail.com">
-      <link rel="icon" type="image/x-icon" href="/img/favicon.ico">
+      
 
       <title>PIXEL MASTER</title>
+      <link rel="icon" type="image/x-icon" href="favicon.ico">
 
       <!-- stylesheet -->
       <link rel="stylesheet" href="style.css">
@@ -86,7 +87,7 @@
             <div class="container-fluid proj_section">
                   <br><br><br>
 
-                  <h6>Selected projects</h6>
+                  <h6>Graphic Projects</h6>
 
                   <div class="vertical"></div>
                   <br>
@@ -315,17 +316,18 @@
             }
             
             // used to change proj text 
-            let all_proj_rows = document.getElementsByClassName("proj_desc");
-            for (let i = 0; i < all_proj_rows.length; i++) {
-                  let recepient_elem = all_proj_rows[i].children[0];
+            let all_proj_desc = document.getElementsByClassName("proj_desc");
+            for (let i = 0; i < all_proj_desc.length; i++) {
+                  let recepient_elem = all_proj_desc[i].children[0];
                   // get dict key 
-                  let img_att = all_proj_rows[i].parentElement.getAttribute("data-img");
+                  let img_att = all_proj_desc[i].parentElement.getAttribute("data-img");
                   let img_text = img_text_arr[img_att];
                   recepient_elem.innerHTML = img_text;
                   
             }
 
             // used to repace proj section bg 
+            let all_proj_rows = document.getElementsByClassName("row");
             for (let i = 0; i < all_proj_rows.length; i++) {
                   let recepient_parent = document.getElementsByClassName("proj_section")[0];
                   all_proj_rows[i].addEventListener("mouseover", function(){
