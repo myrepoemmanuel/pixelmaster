@@ -608,12 +608,12 @@ h6 {
 }
 
 .project {
-      height: 500px;
+      height: 600px;
 }
 
 .project1 {
       background: url("img/Blue_ECO.jpg") no-repeat 50% 50%;
-      background-size: cover;
+      background-size: contain;
 }
 
 .project1::after {
@@ -626,7 +626,7 @@ h6 {
       padding: 10px 25px;
       display: block;
       top: 8%;
-      left: -60%;
+      left: -80%;
       right: 0;
       bottom: 0;
       width: max-content;
@@ -634,7 +634,7 @@ h6 {
 
 .project2 {
       background: url('img/TSHIRT2.jpg') no-repeat 50% 50%;
-      background-size: cover;
+      background-size: contain;
 }
 
 .project2::after {
@@ -655,7 +655,7 @@ h6 {
 
 .project3 {
       background: url('img/OCEAN_ORION.jpg') no-repeat 50% 50%;
-      background-size: cover;
+      background-size: contain;
 }
 
 .project3::after {
@@ -676,7 +676,7 @@ h6 {
 
 .project4 {
       background: url('img/C2.jpg') no-repeat 50% 50%;
-      background-size: cover;
+      background-size: contain;
 }
 
 .project4::after {
@@ -695,9 +695,223 @@ h6 {
       width: max-content;
 }
 
+.project5 {
+      background: url('img/nation_altar.png') no-repeat 50% 50%;
+      background-size: contain;
+}
+
+.project5::after {
+      content: "National Altar.";
+      font-family: "Roboto Mono";
+      font-size: 36px;
+      position: relative;
+      color: #fff;
+      background: #0f0f0f77;
+      padding: 10px 25px;
+      display: block;
+      top: 10%;
+      left: -60%;
+      right: 0;
+      bottom: 0;
+      width: max-content;
+}
+
+.project6 {
+      background: url('img/bumper.jpeg') no-repeat 50% 50%;
+      background-size: contain;
+}
+
+.project6::after {
+      content: "Kahawa.";
+      font-family: "Roboto Mono";
+      font-size: 36px;
+      position: relative;
+      color: #fff;
+      background: #0f0f0f77;
+      padding: 10px 25px;
+      display: block;
+      top: 10%;
+      left: 90%;
+      right: 0;
+      bottom: 0;
+      width: max-content;
+}
+
+.project7 {
+      background: url('img/fishflex.jpeg') no-repeat 50% 50%;
+      background-size: contain;
+}
+
+.project7::after {
+      content: "Fishflex.";
+      font-family: "Roboto Mono";
+      font-size: 36px;
+      position: relative;
+      color: #fff;
+      background: #0f0f0f77;
+      padding: 10px 25px;
+      display: block;
+      top: 10%;
+      left: -60%;
+      right: 0;
+      bottom: 0;
+      width: max-content;
+}
+
+.project8 {
+      background: url('img/grad_gold.jpeg') no-repeat 50% 50%;
+      background-size: contain;
+}
+
+.project8::after {
+      content: "UON Graduation.";
+      font-family: "Roboto Mono";
+      font-size: 36px;
+      position: relative;
+      color: #fff;
+      background: #0f0f0f77;
+      padding: 10px 25px;
+      display: block;
+      top: 10%;
+      left: 90%;
+      right: 0;
+      bottom: 0;
+      width: max-content;
+}
+
+.project9 {
+      background: url('img/jamhuri.jpeg') no-repeat 50% 50%;
+      background-size: contain;
+}
+
+.project9::after {
+      content: "Jamhuri.";
+      font-family: "Roboto Mono";
+      font-size: 36px;
+      position: relative;
+      color: #fff;
+      background: #0f0f0f77;
+      padding: 10px 25px;
+      display: block;
+      top: 10%;
+      left: -60%;
+      right: 0;
+      bottom: 0;
+      width: max-content;
+}
+
+.project10 {
+      background: url('img/juliet_grad.jpeg') no-repeat 50% 50%;
+      background-size: contain;
+}
+
+.project10::after {
+      content: "Graduation.";
+      font-family: "Roboto Mono";
+      font-size: 36px;
+      position: relative;
+      color: #fff;
+      background: #0f0f0f77;
+      padding: 10px 25px;
+      display: block;
+      top: 10%;
+      left: 90%;
+      right: 0;
+      bottom: 0;
+      width: max-content;
+}
+
+.project11 {
+      background: url('img/pandc.jpeg') no-repeat 50% 50%;
+      background-size: contain;
+}
+
+.project11::after {
+      content: "Peace and Love.";
+      font-family: "Roboto Mono";
+      font-size: 36px;
+      position: relative;
+      color: #fff;
+      background: #0f0f0f77;
+      padding: 10px 25px;
+      display: block;
+      top: 10%;
+      left: -60%;
+      right: 0;
+      bottom: 0;
+      width: max-content;
+}
+
+
+.project12 {
+      background: url('img/patricia.jpeg') no-repeat 50% 50%;
+      background-size: contain;
+}
+
+.project12::after {
+      content: "Education.";
+      font-family: "Roboto Mono";
+      font-size: 36px;
+      position: relative;
+      color: #fff;
+      background: #0f0f0f77;
+      padding: 10px 25px;
+      display: block;
+      top: 10%;
+      left: 90%;
+      right: 0;
+      bottom: 0;
+      width: max-content;
+}
+
+.project13 {
+      background: url('img/shoe.jpeg') no-repeat 50% 50%;
+      background-size: contain;
+}
+
+.project13::after {
+      content: "Drip.";
+      font-family: "Roboto Mono";
+      font-size: 36px;
+      position: relative;
+      color: #fff;
+      background: #0f0f0f77;
+      padding: 10px 25px;
+      display: block;
+      top: 10%;
+      left: -60%;
+      right: 0;
+      bottom: 0;
+      width: max-content;
+}
+
+
+.project14 {
+      background: url('img/unity_feast.jpeg') no-repeat 50% 50%;
+      background-size: contain;
+}
+
+.project14::after {
+      content: "Unity Fest.";
+      font-family: "Roboto Mono";
+      font-size: 36px;
+      position: relative;
+      color: #fff;
+      background: #0f0f0f77;
+      padding: 10px 25px;
+      display: block;
+      top: 10%;
+      left: 90%;
+      right: 0;
+      bottom: 0;
+      width: max-content;
+}
+
 @media(max-width: 995px) {
       
-      .project1::after, .project2::after, .project3::after, .project4::after {
+      .project1::after, .project2::after, .project3::after, .project4::after, .project5::after,
+      .project6::after, .project7::after, .project8::after, .project9::after, .project10::after,
+      .project11::after, .project12::after, .project13::after, .project14::after  {
             top: 3%;
             left: 1%;
             width: max-content;
@@ -714,7 +928,9 @@ h6 {
             display: none;
       }
 
-      .project1::after, .project2::after, .project3::after, .project4::after {
+      .project1::after, .project2::after, .project3::after, .project4::after, .project5::after,
+      .project6::after, .project7::after, .project8::after, .project9::after, .project10::after,
+      .project11::after, .project12::after, .project13::after, .project14::after {
             display: none;
       }
 }
